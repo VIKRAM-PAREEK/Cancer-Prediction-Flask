@@ -5,8 +5,110 @@
 
 </head>
 <body>
-	<h1>Hey there!!!</h1>
-	<h1>Welcome to Breat Cancer Prediction Portal</h1>
+	<h2>Hey there!!!</h2>
+	<h2>Welcome to Breat Cancer Prediction Portal</h2>
+	<h2>Enter the values below</h2>
+	<form action="\" method="POST">
+		Name:<br>
+		<input type="text" name="username" required>
+		<br>
+		Radius Mean:<br>
+		<input type="text" name="rmean" required>
+		<br>
+		Texture Mean:<br>
+		<input type="text" name="tmean" required>
+		<br>
+		Perimeter Mean:<br>
+		<input type="text" name="pmean" required>
+		<br>
+		Area Mean:<br>
+		<input type="text" name="amean" required>
+		<br>
+		Smoothness Mean:<br>
+		<input type="text" name="smean" required>
+		<br>
+		Compactness Mean:<br>
+		<input type="text" name="cmpmean" required>
+		<br>
+		Concavity Mean:<br>
+		<input type="text" name="conmean" required>
+		<br>
+		Concave Point Mean:<br>
+		<input type="text" name="cpmean" required>
+		<br>
+		Symmetry Mean:<br>
+		<input type="text" name="symean" required>
+		<br>
+		Fractal Dimension Mean:<br>
+		<input type="text" name="fdmean" required>
+		<br>
+		Radius_se:<br>
+		<input type="text" name="rse" required>
+		<br>
+		Texture_se:<br>
+		<input type="text" name="tse" required>
+		<br>
+		Perimeter_se:<br>
+		<input type="text" name="pse" required>
+		<br>
+		Area_se:<br>
+		<input type="text" name="ase" required>
+		<br>
+		Smoothness_se:<br>
+		<input type="text" name="smse" required>
+		<br>
+		Compactness_se:<br>
+		<input type="text" name="cmpse" required>
+		<br>
+		Concavity_se:<br>
+		<input type="text" name="cnse" required>
+		<br>
+		Concave Points_se:<br>
+		<input type="text" name="cpse" required>
+		<br>
+		Symmetry_se:<br>
+		<input type="text" name="syse" required>
+		<br>
+		Fractal_dimension_se:<br>
+		<input type="text" name="fdse" required>
+		<br>
+		Radius_w:<br>
+		<input type="text" name="radw" required>
+		<br>
+		Texture_w:<br>
+		<input type="text" name="textw" required>
+		<br>
+		Perimeter_w:<br>
+		<input type="text" name="periw" required>
+		<br>
+		Area_w:<br>
+		<input type="text" name="areaw" required>
+		<br>
+		Smoothness_w:<br>
+		<input type="text" name="smtw" required>
+		<br>
+		Compactness_w:<br>
+		<input type="text" name="cmpw" required>
+		<br>
+		Concavity_w:<br>
+		<input type="text" name="concw" required>
+		<br>
+		Concave Point_w:<br>
+		<input type="text" name="cpw" required>
+		<br>
+		Symmetry_w:<br>
+		<input type="text" name="symmw" required>
+		<br>
+		Fractal_dimesion_w:<br>
+		<input type="text" name="fdw" required>
+		<br>
+		<button type="submit" value="submit">PREDICT</button>
+	</form>
+<div>
+	{% if name %}
+	<p>Hello {{ name }}, your values are being processed.....</p>
+	{% endif %}
+</div>
 		
 </body>
 </html>
