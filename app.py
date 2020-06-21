@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/',methods= ['GET','POST'])
 def home():	
-	return render_template('frontpage.html',name=name,val=val)
+	return render_template('frontpage.html')
 
 @app.route('/results', methods= ['GET','POST'])
 
