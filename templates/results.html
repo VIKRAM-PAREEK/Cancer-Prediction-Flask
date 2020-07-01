@@ -4,10 +4,14 @@
 	<title>Results</title>
 </head>
 <body>
-<div>
-	{% if name %}
-	<p>{{ prediction }}</p>
-	{% endif %}
-</div>
+{% extends 'nav.html' %}
+{% block main %}
+	<div>
+		{% if name %}
+		<p>{{ prediction }}</p>
+		{% endif %}
+	</div>
+{% endblock %}
+
 </body>
 </html>

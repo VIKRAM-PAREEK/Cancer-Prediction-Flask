@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request
+from flask import Flask,render_template,request, redirect , url_for
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -10,6 +10,10 @@ app = Flask(__name__)
 @app.route('/',methods= ['GET','POST'])
 def home():	
 	return render_template('frontpage.html')
+
+@app.route('/userinput')
+def user_input():
+	return render_template('userinput.html')
 
 @app.route('/results', methods= ['GET','POST'])
 
